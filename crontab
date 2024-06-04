@@ -1,0 +1,2 @@
+0 * * * * restart_caddy.sh
+@reboot startsbots.sh

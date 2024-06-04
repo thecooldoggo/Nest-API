@@ -1,0 +1,14 @@
+{
+        admin off
+}
+
+http://TheCoolDoggo.hackclub.app {
+        bind unix/.webserver.sock|777
+        root * /home/TheCoolDoggo/pub
+        file_server {
+                hide .git .env
+        }
+        header /yt-stats.json* Access-Control-Allow-Origin "*"
+        header /yt-stats.json* Access-Control-Allow-Methods "GET, POST, OPTIONS"
+        header /yt-stats.json* Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+}

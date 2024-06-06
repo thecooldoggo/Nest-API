@@ -1,8 +1,4 @@
-{
-        admin off
-}
-
-http://TheCoolDoggo.hackclub.app {
+http://TheCoolDoggo.hackclub.app:8080 {
         bind unix/.webserver.sock|777
         root * /home/TheCoolDoggo/pub
         file_server {
